@@ -1,0 +1,147 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, auto-fit);
+  grid-template-rows: repeat(2, auto-fit);
+}
+
+.header {
+  grid-column: 2/4;
+  grid-row: 1/2;
+  display: grid;
+  background-color: #a5f3fc;
+}
+.search {
+  display: grid;
+  grid-template-columns: 0.3fr 2.5fr 2fr 1fr 1fr;
+  padding: 15px;
+  align-items: center;
+  margin-left: 50px;
+}
+input {
+  border-radius: 10px;
+  padding: 3px;
+}
+.bell {
+  justify-self: center;
+}
+
+.welcome {
+  font-size: 1.4rem;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 3fr;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.menu ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 15px;
+}
+
+.menu ul li {
+  background-color: #22d3ee;
+  text-align: center;
+  padding: 8px;
+  margin: 0 25px;
+  border-radius: 10px;
+}
+
+.side-bar {
+  display: grid;
+  grid-row: 1 / 4;
+  background-color: #22d3ee;
+  justify-content: center;
+  padding: 0 50px 0 18px;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: 0.35fr 1.2fr;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.trending-section {
+  background-color: #22d3ee;
+  border-radius: 10px;
+  margin-bottom: ;
+}
+
+.trending-section > h4 {
+  margin-left: 30px;
+  padding-top: 20px;
+}
+.trending {
+  display: grid;
+  grid-column: 3/4;
+  padding: 10px;
+  text-align: center;
+  grid-template-columns: 1fr;
+}
+
+.news {
+  display: grid;
+  grid-template-columns: 0.25fr 0.4fr;
+  align-items: center;
+}
+
+.projects-section {
+  grid-row: 2/4;
+  display: grid;
+  z-index: -1;
+}
+
+.projects-title {
+  margin-left: 30px;
+  padding-top: 20px;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  text-align: center;
+  margin: 0 40px 100px;
+}
+.projects {
+  display: grid;
+  height: 250px;
+  border-left: 4px #000 solid;
+  z-index: 1;
+  justify-self: center;
+  background-color: aquamarine;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.projects-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 160px;
+}
+
+.announcements-section {
+  margin-bottom: 50px;
+}
+.announcements-section > h4 {
+  margin-left: 30px;
+  padding-top: 20px;
+}
+.announcements-container {
+  text-align: center;
+  padding: 20px;
+}
